@@ -2,4 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+.banner-text {
+  font-family: "Monoton", cursive;
+}
+.heading {
+  font-family: "Karantina", cursive;
+  font-size: 3.5rem;
+  letter-spacing: 3px;
+  color: #f37121;
+}
+button {
+  background: linear-gradient(45deg, #111d5e, #810000, #1b1717);
+  color: white;
 }

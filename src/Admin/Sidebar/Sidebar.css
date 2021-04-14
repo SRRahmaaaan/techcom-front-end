@@ -1,0 +1,35 @@
+.sidebarContainer {
+  min-height: 100vh;
+  background: linear-gradient(130deg, #151515, #3c415c, #301b3f);
+  padding-top: 10%;
+}
+.toggleIcon {
+  font-size: 1.8rem;
+  margin-top: -10px;
+  cursor: pointer;
+  color: white;
+}
+.sidebarContainer ul {
+  list-style-type: none;
+  line-height: 4rem;
+}
+.sidebarContainer ul li a:-webkit-any-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: white;
+  padding-left: 40px;
+  display: block;
+  transition: all 0.5s ease-in-out;
+}
+.sidebarContainer ul li a:-webkit-any-link:hover {
+  background-color: #3c415c;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.sidebarContainer ul li:hover a:-webkit-any-link {
+  color: black;
+}
+.sidebarIcon {
+  margin-top: -5px;
+  margin-right: 10px;
+}
