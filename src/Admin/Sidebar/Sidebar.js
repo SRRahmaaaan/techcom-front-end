@@ -14,13 +14,13 @@ const Sidebar = () => {
                     <Link to="/admin"><FaClipboardList className="sidebarIcon" />ORDER LIST</Link>
                 </li>
                 <li>
-                    <Link to="/admin/addService"><FaPlusCircle className="sidebarIcon" />ADD SERVICE</Link>
+                    <Link to="/addService/"><FaPlusCircle className="sidebarIcon" />ADD SERVICE</Link>
                 </li>
                 <li>
-                    <Link to="/admin/manageServices"><FaTools className="sidebarIcon"/>MANAGE SERVICES</Link>
+                    <Link to="/manageServices"><FaTools className="sidebarIcon"/>MANAGE SERVICES</Link>
                 </li>
                 <li>
-                    <Link to="/admin/addAdmin"><FaUserPlus className="sidebarIcon" />ADD ADMIN</Link>
+                    <Link to="/addAdmin"><FaUserPlus className="sidebarIcon" />ADD ADMIN</Link>
                 </li>
             </ul>
         </aside>

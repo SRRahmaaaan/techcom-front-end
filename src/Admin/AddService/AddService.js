@@ -1,10 +1,19 @@
 import React from 'react'
+import Sidebar from "../Sidebar/Sidebar"
+import ServiceForm from './ServiceForm'
 
 const AddService = () => {
     return (
-        <div>
-            <h1>This Is Add Service</h1>
-        </div>
+        <main className="container-fluid">
+            <section className="row">
+                <div className="col-md-3 m-0 p-0">
+                    <Sidebar />
+                </div>
+                <div className="col-md-9 m-0 p-0 bg-dark">
+                    <ServiceForm />
+                </div>
+            </section>
+        </main>
     )
 }
 

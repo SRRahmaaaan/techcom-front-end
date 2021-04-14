@@ -12,9 +12,9 @@ const App = () => {
         <Switch>
           <Route path="/admin" component={Admin} />
           <Route path="/admin/orderList" component={OrderList} />
-          <Route path="/admin/addService" component={AddService} />
-          <Route path="/admin/manageServices" component={ManageServices} />
-          <Route path="/admin/addAdmin" component={MakeAdmin} />
+          <Route path="/addService" component={AddService} />
+          <Route path="/manageServices" component={ManageServices} />
+          <Route path="/addAdmin" component={MakeAdmin} />
         </Switch>
   );
 }
