@@ -1,0 +1,10 @@
+.form-card {
+  background: linear-gradient(45deg, #111d5e, #1b1717);
+  color: white;
+}
+.form-card span {
+  text-decoration: underline;
+  color: red;
+  margin-left: 5px;
+  cursor: pointer;
+}

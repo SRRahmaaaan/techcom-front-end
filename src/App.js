@@ -6,18 +6,24 @@ import ManageServices from './Admin/ManageServices/ManageServices'
 import MakeAdmin from './Admin/MekeAdmin/MakeAdmin'
 import OrderList from './Admin/OrderList/OrderList'
 import "./App.css"
+import PrivateRoute from "./Authentication/PrivateRoute/PrivateRoute"
+import Authentication from './Authentication/Authentication/Authentication'
+import Provider from './Authentication/Context/Context'
 import Home from './Home/Home/Home'
 
 const App = () => {
   return (
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route path="/admin" component={Admin} />
-          <Route path="/admin/orderList" component={OrderList} />
-          <Route path="/addService" component={AddService} />
-          <Route path="/manageServices" component={ManageServices} />
-          <Route path="/addAdmin" component={MakeAdmin} />
-        </Switch>
+        <Provider>
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <PrivateRoute path="/admin" component={Admin} />
+            <PrivateRoute path="/admin/orderList" component={OrderList} />
+            <PrivateRoute path="/addService" component={AddService} />
+            <PrivateRoute path="/manageServices" component={ManageServices} />
+            <PrivateRoute path="/addAdmin" component={MakeAdmin} />
+            <Route path="/login" component={Authentication} />
+          </Switch>
+        </Provider>
   );
 }
 

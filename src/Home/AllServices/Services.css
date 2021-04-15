@@ -31,10 +31,7 @@
 .service-box .imgbx img {
   width: 100px;
   transition: 0.5s ease;
-  filter: invert(1);
-}
-.service-box:hover .service-box .imgbx img {
-  filter: invert(0);
+  filter: invert(2);
 }
 .service-box .descbx {
   transform: translateY(-100px);
