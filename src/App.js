@@ -6,10 +6,12 @@ import ManageServices from './Admin/ManageServices/ManageServices'
 import MakeAdmin from './Admin/MekeAdmin/MakeAdmin'
 import OrderList from './Admin/OrderList/OrderList'
 import "./App.css"
+import Home from './Home/Home/Home'
 
 const App = () => {
   return (
         <Switch>
+          <Route exact path="/" component={Home} />
           <Route path="/admin" component={Admin} />
           <Route path="/admin/orderList" component={OrderList} />
           <Route path="/addService" component={AddService} />

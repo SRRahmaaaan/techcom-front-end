@@ -2,10 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
 }
-.banner-text {
-  font-family: "Monoton", cursive;
+a:-webkit-any-link:hover {
+  text-decoration: none;
+}
+body {
+  font-family: "Ubuntu", sans-serif;
 }
 .heading {
   font-family: "Karantina", cursive;
