@@ -1,0 +1,54 @@
+.service-box {
+  width: 300px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.service-box .common {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.service-box .imgbx {
+  transition: 0.5s ease-in-out;
+  transform: translateY(100px);
+  z-index: 1;
+  box-shadow: 10px 10px 30px 5px #333;
+  background: linear-gradient(45deg, #111d5e, #1b1717);
+}
+.service-box:hover.service-box .imgbx {
+  transform: translateY(0px);
+  box-shadow: 0px 0px 0px 0px;
+  color: white;
+  background: black;
+  transition: all 0.5s ease-in-out;
+}
+.service-box .imgbx img {
+  width: 100px;
+  transition: 0.5s ease;
+  filter: invert(1);
+}
+.service-box:hover .service-box .imgbx img {
+  filter: invert(0);
+}
+.service-box .descbx {
+  transform: translateY(-100px);
+  transition: 0.5s ease-in-out;
+  box-shadow: 10px 10px 30px 5px #333;
+  padding: 0px 10px;
+}
+.service-box:hover.service-box .descbx {
+  transform: translateY(0px);
+  box-shadow: 0px 0px 0px 0px;
+  background: linear-gradient(45deg, #111d5e, #1b1717);
+  color: white;
+}
+.service-box p {
+  margin: 0 !important;
+  padding: 0 !important;
+}

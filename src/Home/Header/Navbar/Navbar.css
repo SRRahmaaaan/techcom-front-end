@@ -1,12 +1,15 @@
 nav {
   height: 80px;
   width: 100%;
-  /* background: linear-gradient(130deg, #151515, #3c415c, #301b3f); */
   display: flex !important;
   align-items: center;
   justify-content: space-between;
   padding: 0px 30px;
   position: fixed;
+  z-index: 111111;
+}
+.changeColor {
+  background: linear-gradient(130deg, #151515, #3c415c, #301b3f);
 }
 nav ul {
   list-style-type: none;

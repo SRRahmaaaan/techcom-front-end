@@ -6,8 +6,13 @@
 a:-webkit-any-link:hover {
   text-decoration: none;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Ubuntu", sans-serif;
+  background: url("./images/banner.svg");
+  background-attachment: fixed;
 }
 .heading {
   font-family: "Karantina", cursive;
