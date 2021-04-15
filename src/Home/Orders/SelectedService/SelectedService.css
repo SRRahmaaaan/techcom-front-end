@@ -1,0 +1,18 @@
+.payment-card {
+  width: 40%;
+  margin: 100px auto;
+  background: linear-gradient(45deg, #111d5e, #1b1717);
+  height: 450px;
+  color: white;
+  padding: 5%;
+  text-align: center;
+}
+.payment-card h6 {
+  font-size: 1.3rem;
+  margin: 20px 0px;
+}
+.payment-card p {
+  padding: 0 !important;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}

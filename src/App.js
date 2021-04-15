@@ -10,6 +10,9 @@ import PrivateRoute from "./Authentication/PrivateRoute/PrivateRoute"
 import Authentication from './Authentication/Authentication/Authentication'
 import Provider from './Authentication/Context/Context'
 import Home from './Home/Home/Home'
+import Orders from './Home/Orders/Orders/Orders'
+import BookingList from './Home/Orders/BookingList/BookingList'
+import ServiceReview from './Home/Orders/ServiceReview/ServiceReview'
 
 const App = () => {
   return (
@@ -21,6 +24,10 @@ const App = () => {
             <PrivateRoute path="/addService" component={AddService} />
             <PrivateRoute path="/manageServices" component={ManageServices} />
             <PrivateRoute path="/addAdmin" component={MakeAdmin} />
+            <PrivateRoute path="/orders/:id" component={Orders} />
+            <PrivateRoute path="/orders" component={Orders} />
+            <PrivateRoute path="/bookings" component={BookingList} />
+            <PrivateRoute path="/review" component={ServiceReview} />
             <Route path="/login" component={Authentication} />
           </Switch>
         </Provider>

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Button } from "react-bootstrap"
+import {Link} from "react-router-dom"
 import "./Services.css"
 
-const ServiceCard = ({service}) => {
-    const {content} = service
+const ServiceCard = ({ service }) => {
+    const { content } = service
     return (
         <div className="col-md-4 p-0">
             <div className="service-box">
@@ -14,7 +15,9 @@ const ServiceCard = ({service}) => {
                 <div className="descbx common">
                     <p>{ content.description}</p>
                     <p style={{fontSize:'1.3rem', color:"#F37121"}}>{ content.price }</p>
-                    <Button className="mt-2">Purchase</Button>
+                    <Button className="mt-2">
+                        <Link to={`/orders/${service._id}`} className="text-white">Purchase</Link>
+                    </Button>
                 </div>
             </div>
         </div>
