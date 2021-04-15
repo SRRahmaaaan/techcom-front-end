@@ -9,7 +9,22 @@ const AdminForm = () => {
     })
     const handleSubmit = (e) => {
         e.preventDefault()
-        console.log(newAdmin)
+        fetch("http://localhost:8000/addAdmin", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body:JSON.stringify(newAdmin)
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data) {
+                alert("ADMIN ADDED SUCCESSFULLY")
+                setNewAdmin({
+                    name: "",
+                    phone: "",
+                    email:""
+                })
+            }
+        })
     }
     return (
         <Card className="bg-info pt-5" style={{border:"none", height:"100%"}}>
