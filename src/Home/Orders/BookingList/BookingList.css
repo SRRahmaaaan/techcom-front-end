@@ -1,0 +1,26 @@
+.booking-card {
+  background: linear-gradient(45deg, #111d5e, #1b1717);
+  color: white;
+  padding: 3%;
+  height: 280px;
+  border-radius: 20px;
+}
+.booking-card .image-box {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+.booking-card .image-box .status {
+  color: white;
+  background-color: #f37121;
+  display: inline-block;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  padding-top: 6px;
+  margin-top: 20px;
+}
+.booking-card img {
+  width: 100px;
+  filter: invert(2);
+}

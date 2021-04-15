@@ -13,9 +13,8 @@ const SelectedService = () => {
     useEffect(() => {
         fetch(`http://localhost:8000/specific/${id}`)
         .then(response => response.json())
-        .then(data => setService(data.content))
+        .then(data => setService(data))
     }, [id])
-
     const makePayment = token => {
         const body = {
             token,
@@ -39,7 +38,8 @@ const SelectedService = () => {
     const handleOrder = () => {
         const order = {
             newOrder: service,
-            status: "Pending"
+            status: "Pending",
+            email: currentUser.email
         }
         fetch("http://localhost:8000/customerOrder", {
             method: "POST",
@@ -58,17 +58,17 @@ const SelectedService = () => {
         <div className="payment-card">
             {service ? <div>
                 {error && <Alert variant="danger">{ error }</Alert>}
-                <h6>Service Name : { service.name }</h6>
+                <h6>Service Name : { service.content.name }</h6>
                 <p>User Email : { currentUser.email }</p>
-                <p>Service Price : {service.price}</p>
+                <p>Service Price : {service.content.price}</p>
                 <StripeCheckout
                     stripeKey="pk_test_51IeHD8CAJYOWPKWKAogESvMzfk2d68hZ0Xct9mRPNcXK7eKjKMjd3DB5VaCbDTfCkIeluld7j3TnBR9usshsD0FQ00gqLDOOVm"
                     token={makePayment}
-                    name={service.name}
+                    name={service.content.name}
                     shippingAddress
                     billingAddress
-                    amount={service.price * 100}>
-                    <Button className="mt-3">PAY WITH CARD { service.price }</Button>
+                    amount={service.content.price * 100}>
+                    <Button className="mt-3">PAY WITH CARD { service.content.price }</Button>
                 </StripeCheckout>
             </div> : <h1>Select A Service</h1>}
             
