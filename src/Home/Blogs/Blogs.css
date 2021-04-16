@@ -1,0 +1,38 @@
+.blog-card {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  margin-bottom: 25px;
+  overflow: hidden;
+  color: white;
+  border-radius: 15px;
+}
+.blog-card .imgbx {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.blog-card .imgbx img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+}
+.blog-card .blog-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: translateY(100%);
+  transition: all 0.5s ease-in-out;
+  padding: 15% 8%;
+}
+.blog-card:hover .blog-content {
+  transform: translateY(0%);
+}
