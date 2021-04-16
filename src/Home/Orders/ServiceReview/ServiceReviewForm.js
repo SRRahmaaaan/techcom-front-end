@@ -25,7 +25,7 @@ const ServiceReviewForm = () => {
             <Card style={{background:"linear-gradient(45deg, #111d53, #1b1717)", borderRadius:"0px", paddingBottom:"20px"}}>
                 <Card.Body>
                     <h2 className="text-center mb-3 heading">Write Your Review Down Here</h2>
-                    <Form onSubmit={handleSubmit(onSubmit)} className="w-75 mx-auto">
+                    <Form onSubmit={handleSubmit(onSubmit)} className="w-75 mx-auto text-white">
                         <Form.Group>
                             <Form.Label>Your Name</Form.Label>
                             <Form.Control type="text" {...register("name", {required: true })}/>
