@@ -37,7 +37,7 @@ const Navbar = () => {
     return (
         <nav className={changeColor ? "changeColor" : ""}>
             <div className="logo">
-                <h1 className="heading">TEACHCoM....</h1>
+                <h1 className="heading">TECHCoM....</h1>
             </div>
             <ul>
                 <li><a href="#home" className="active" style={{color: changeColor && "#fff"}}>Home</a></li>

@@ -44,7 +44,7 @@ const AdminForm = () => {
                         <Form.Label>Admin Email</Form.Label>
                         <Form.Control type="email" required onChange={(e) => setNewAdmin({ ...newAdmin, email: e.target.value })} value={ newAdmin.email}/>
                     </Form.Group>
-                    <Button type="submit" className="w-100 mx-auto mt-4">Submit Your Service</Button>
+                    <Button type="submit" className="w-100 mx-auto mt-4">Add Admin</Button>
                 </Form>
             </Card.Body>
         </Card>
