@@ -1,0 +1,20 @@
+.about-section {
+  height: 400px;
+  color: white;
+  background: linear-gradient(45deg, #111d5e, #1b1717);
+}
+.about-section img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+.about-section .left {
+  padding: 5%;
+}
+.about-section .left h3 {
+  margin-bottom: 20px;
+  color: #f37121;
+}
+.about-section .left p {
+  font-size: 1.2rem;
+}

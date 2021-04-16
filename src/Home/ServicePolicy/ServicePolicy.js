@@ -24,7 +24,7 @@ const policyData = [
 ]
 const ServicePolicy = () => {
     return (
-        <section id="policy" className="sectionContainer">
+        <section className="sectionContainer">
             <h3 className="heading mb-5">WE BELIEVE <span style={{fontSize:"6rem", color:"black"}}>3</span> THINGS</h3>
             <div className="row w-100">
                 {
