@@ -32,6 +32,7 @@ const Navbar = () => {
             <ul>
                 <li><a href="#home" className="active" style={{color: changeColor && "#fff"}}>Home</a></li>
                 <li><Link to="/admin"  style={{color: changeColor && "#fff"}}>Admin</Link></li>
+                <li><Link to="/orders"  style={{color: changeColor && "#fff"}}>Orders</Link></li>
                 <li><a href="#services" style={{color: changeColor && "#fff"}}>Services</a></li>
                 <li><a href="#blogs" style={{color: changeColor && "#fff"}}>Blogs</a></li>
                 <li><a href="#contact" style={{ color: changeColor && "#fff" }}>Contact Us</a></li>
