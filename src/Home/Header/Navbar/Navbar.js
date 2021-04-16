@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react'
 import "./Navbar.css"
 import {useAuth} from "../../../Authentication/Context/Context"
 import { Link } from "react-router-dom"
-import {Alert, Button} from "react-bootstrap"
+import { Alert, Button } from "react-bootstrap"
+import {FaBars, FaTimes} from "react-icons/fa"
 
 const Navbar = () => {
     const [isAdmin, setIsAdmin] = useState(false)
@@ -34,12 +35,21 @@ const Navbar = () => {
         .then(response => response.json())
         .then(data => setIsAdmin(data))
     }, [currentUser?.email])
+    const [toggle, setToggle] = useState(false)
+    const handleToggle = () => {
+        setToggle(!toggle)
+    }
     return (
         <nav className={changeColor ? "changeColor" : ""}>
             <div className="logo">
                 <h1 className="heading">TECHCoM....</h1>
             </div>
-            <ul>
+                {
+                    toggle ?
+                    <FaTimes onClick={handleToggle} className="toggleIcon text-danger" /> :
+                    <FaBars onClick={handleToggle} className="toggleIcon" />
+                }
+            <ul style={{transform: toggle && "translateX(0)"}}>
                 <li><a href="#home" className="active" style={{color: changeColor && "#fff"}}>Home</a></li>
                 {isAdmin && <li><Link to="/admin"  style={{color: changeColor && "#fff"}}>Admin</Link></li>}
                 <li><Link to="/orders"  style={{color: changeColor && "#fff"}}>Orders</Link></li>

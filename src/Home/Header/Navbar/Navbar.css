@@ -8,12 +8,16 @@ nav {
   position: fixed;
   z-index: 111111;
 }
+nav .toggleIcon {
+  display: none;
+}
 .changeColor {
   background: linear-gradient(130deg, #151515, #3c415c, #301b3f);
 }
 nav ul {
   list-style-type: none;
   margin-top: 10px;
+  transition: 0.5s ease-in-out;
 }
 nav ul li {
   display: inline-block;
@@ -36,4 +40,31 @@ nav ul li a:hover {
 nav .active {
   background-color: #151515;
   color: #f37121;
+}
+@media (min-width: 280px) and (max-width: 1023px) {
+  nav {
+    background: linear-gradient(130deg, #151515, #3c415c, #301b3f);
+  }
+  nav .toggleIcon {
+    display: block;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  nav ul {
+    position: fixed;
+    top: 69px;
+    right: 0;
+    width: 40%;
+    background: linear-gradient(130deg, #151515, #3c415c, #301b3f);
+    min-height: 110vh;
+    z-index: 5000;
+    padding-top: 5%;
+    text-align: center;
+    transform: translateX(100%);
+  }
+  nav ul li {
+    display: block;
+    line-height: 80px;
+  }
 }
