@@ -1,6 +1,7 @@
 import React, { useRef, useState } from 'react'
 import {useHistory, useLocation} from "react-router-dom"
 import { Card, Button, Form, Alert } from "react-bootstrap"
+import {FaHome} from "react-icons/fa"
 import { useAuth } from '../Context/Context'
 import "./Forms.css"
 
@@ -38,7 +39,8 @@ const SignUp = () => {
     }
 
     return (
-        <div className="w-100" style={{maxWidth:"400px"}}>
+        <div className="w-100" style={{ maxWidth: "400px" }}>
+            <FaHome onClick={() => history.push("/")} style={{fontSize:"2rem", cursor:"pointer"}} />
             <Card className="form-card">
                 <Card.Body>
                     <h2 className="heading mb-3 text-center">SIGN UP</h2>

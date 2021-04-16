@@ -1,0 +1,45 @@
+.footer-container {
+  background: linear-gradient(45deg, #111d5e, #1b1717);
+  height: 400px;
+  padding: 5%;
+}
+.footer-container h4 {
+  color: #f37121;
+}
+.footer-container p {
+  color: white;
+}
+.footer-container .box-1 .headIcon {
+  font-size: 5rem;
+  color: white;
+  margin-right: 30px;
+  transform: translateY(-20px);
+}
+.footer-container .box-1 p {
+  font-size: 1.1rem;
+  margin: 20px 0px;
+}
+.footer-container .box-1 .socialIcon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+  color: white;
+  cursor: pointer;
+}
+.footer-container .box-2 {
+  margin-left: 50px;
+}
+.footer-container .box-2 ul {
+  margin: 20px 20px;
+  list-style-type: none;
+  line-height: 30px;
+  color: white;
+  font-size: 1.2rem;
+}
+.footer-container .box-3 p {
+  font-size: 1.1rem;
+}
+.footer-container .box-3 .icons {
+  font-size: 2rem;
+  margin-right: 15px;
+  transform: translateY(-5px);
+}

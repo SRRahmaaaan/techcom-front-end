@@ -18,7 +18,10 @@ const BookingList = () => {
                     <OrderSidebar />
                 </div>
                 <div className="col-md-9 p-0 m-0">
-                    <div className="row mx-auto pt-3" style={{width:"85%"}}>
+                    <div className="row mx-auto pt-3" style={{ width: "85%" }}>
+                        {
+                            services.length === 0 && <h1>You Don't Have Any Booking</h1>
+                        }
                         {
                             services.map((service) => <BookingCard key={service._id} service={service} />)
                         }
