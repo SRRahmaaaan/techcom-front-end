@@ -1,7 +1,7 @@
 .formCard {
   border: none;
-  height: 50%;
-  margin-top: 45px;
+  height: 60%;
   background: linear-gradient(130deg, #151515, #3c415c, #301b3f);
   color: white;
+  border-radius: 0 !important;
 }

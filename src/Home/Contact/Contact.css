@@ -1,0 +1,7 @@
+.contact-card {
+  width: 80%;
+  height: 480px;
+  border: none !important;
+  padding-top: 30px;
+  background: linear-gradient(130deg, #151515, #3c415c, #301b3f);
+}
