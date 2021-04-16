@@ -1,0 +1,30 @@
+.heading-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+  margin-bottom: 30px;
+}
+.heading-content h3 {
+  text-transform: uppercase;
+  color: #810000;
+  text-shadow: 4px 2px 1px #fff;
+}
+.order-container {
+  background: linear-gradient(45deg, #111d5e, #1b1717);
+  min-height: 100vh;
+  color: white;
+  padding: 5%;
+}
+.order-card {
+  background: linear-gradient(130deg, #151515, #3c415c, #301b3f);
+  height: 80px;
+  border: 1px solid white;
+  border-radius: 15px;
+  width: 100%;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10%;
+}

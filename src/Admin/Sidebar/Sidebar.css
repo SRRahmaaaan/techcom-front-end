@@ -3,12 +3,6 @@
   background: linear-gradient(130deg, #151515, #3c415c, #301b3f);
   padding-top: 10%;
 }
-.toggleIcon {
-  font-size: 1.8rem;
-  margin-top: -10px;
-  cursor: pointer;
-  color: white;
-}
 .sidebarContainer ul {
   list-style-type: none;
   line-height: 4rem;

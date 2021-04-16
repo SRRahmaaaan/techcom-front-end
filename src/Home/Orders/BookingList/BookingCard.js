@@ -5,7 +5,7 @@ const BookingCard = ({service}) => {
     const {newOrder, status} = service
     return (
         <div className="col-md-6">
-            <div className="booking-card">
+            <div className="booking-card mb-3">
                 <div className="image-box">
                     <img src={newOrder.imageURL} className="img-fluid" alt="serviceLogo" />
                     <p className="status">{ status }</p>
