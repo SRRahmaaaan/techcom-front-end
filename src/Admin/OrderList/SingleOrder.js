@@ -7,7 +7,7 @@ const singleOrder = ({order}) => {
         const status = e.target.value
         const id = order._id
         const updateService = {status, id}
-        fetch(`http://localhost:8000/update/${id}`, {
+        fetch(`https://obscure-peak-79043.herokuapp.com/update/${id}`, {
             method: "PATCH",
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(updateService)

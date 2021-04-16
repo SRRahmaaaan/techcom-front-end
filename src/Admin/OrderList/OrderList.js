@@ -6,7 +6,7 @@ import "./OrderList.css"
 const OrderList = () => {
     const [orders, setOrders] = useState([])
     useEffect(() => {
-        fetch("http://localhost:8000/allOrders")
+        fetch("https://obscure-peak-79043.herokuapp.com/allOrders")
         .then(response => response.json())
         .then(data => setOrders(data))
     }, [])

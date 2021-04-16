@@ -11,7 +11,7 @@ const SelectedService = () => {
     const [error, setError] = useState()
     const { currentUser } = useAuth()
     useEffect(() => {
-        fetch(`http://localhost:8000/specific/${id}`)
+        fetch(`https://obscure-peak-79043.herokuapp.com/specific/${id}`)
         .then(response => response.json())
         .then(data => setService(data))
     }, [id])
@@ -23,7 +23,7 @@ const SelectedService = () => {
         const headers = {
             "Content-Type": "application/json"
         }
-        return fetch("http://localhost:8000/payment", {
+        return fetch("https://obscure-peak-79043.herokuapp.com/payment", {
             method: "POST",
             headers,
             body: JSON.stringify(body)
@@ -41,7 +41,7 @@ const SelectedService = () => {
             status: "Pending",
             email: currentUser.email
         }
-        fetch("http://localhost:8000/customerOrder", {
+        fetch("https://obscure-peak-79043.herokuapp.com/customerOrder", {
             method: "POST",
             headers: { 'Content-Type': "application/json" },
             body: JSON.stringify(order)

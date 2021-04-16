@@ -6,7 +6,7 @@ const SingleService = ({service}) => {
     const { content } = service
     const [none, setNone] = useState(false)
     const handleDelete = (id) => {
-        fetch(`http://localhost:8000/deleteService/${id}`, {
+        fetch(`https://obscure-peak-79043.herokuapp.com/deleteService/${id}`, {
             method:"DELETE"
         })
         .then(response => response.json())

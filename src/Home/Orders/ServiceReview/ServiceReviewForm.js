@@ -7,7 +7,7 @@ const ServiceReviewForm = () => {
     const history = useHistory()
     const { register, handleSubmit, formState: { errors } } = useForm();
     const onSubmit = data => {
-        fetch("http://localhost:8000/getReview", {
+        fetch("https://obscure-peak-79043.herokuapp.com/getReview", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data)

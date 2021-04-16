@@ -9,7 +9,7 @@ const AdminForm = () => {
     })
     const handleSubmit = (e) => {
         e.preventDefault()
-        fetch("http://localhost:8000/addAdmin", {
+        fetch("https://obscure-peak-79043.herokuapp.com/addAdmin", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body:JSON.stringify(newAdmin)

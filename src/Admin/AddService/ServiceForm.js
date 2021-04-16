@@ -26,7 +26,7 @@ const ServiceForm = () => {
             content: newService,
             imageURL: imageUrl
         }
-            fetch("http://localhost:8000/addService", {
+            fetch("https://obscure-peak-79043.herokuapp.com/addService", {
                 method: "POST",
                 headers: { 'Content-Type': "application/json" },
                 body:JSON.stringify(postData)

@@ -7,7 +7,7 @@ const BookingList = () => {
     const [services, setServices] = useState([])
     const {currentUser} = useAuth()
     useEffect(() => {
-        fetch("http://localhost:8000/orderedService?email=" + currentUser.email)
+        fetch("https://obscure-peak-79043.herokuapp.com/orderedService?email=" + currentUser.email)
         .then(response => response.json())
         .then(data => setServices(data))
     }, [currentUser])
