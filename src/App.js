@@ -13,17 +13,18 @@ import Home from './Home/Home/Home'
 import Orders from './Home/Orders/Orders/Orders'
 import BookingList from './Home/Orders/BookingList/BookingList'
 import ServiceReview from './Home/Orders/ServiceReview/ServiceReview'
+import AdminRoute from './Admin/AdminRoute/AdminRoute'
 
 const App = () => {
   return (
         <Provider>
           <Switch>
             <Route exact path="/" component={Home} />
-            <PrivateRoute path="/admin" component={Admin} />
-            <PrivateRoute path="/admin/orderList" component={OrderList} />
-            <PrivateRoute path="/addService" component={AddService} />
-            <PrivateRoute path="/manageServices" component={ManageServices} />
-            <PrivateRoute path="/addAdmin" component={MakeAdmin} />
+            <AdminRoute path="/admin" component={Admin} />
+            <AdminRoute path="/admin/orderList" component={OrderList} />
+            <AdminRoute path="/addService" component={AddService} />
+            <AdminRoute path="/manageServices" component={ManageServices} />
+            <AdminRoute path="/addAdmin" component={MakeAdmin} />
             <PrivateRoute path="/orders/:id" component={Orders} />
             <PrivateRoute path="/orders" component={Orders} />
             <PrivateRoute path="/bookings" component={BookingList} />

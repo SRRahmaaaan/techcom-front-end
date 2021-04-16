@@ -1,10 +1,11 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import "./Navbar.css"
 import {useAuth} from "../../../Authentication/Context/Context"
 import { Link } from "react-router-dom"
 import {Alert, Button} from "react-bootstrap"
 
 const Navbar = () => {
+    const [isAdmin, setIsAdmin] = useState(false)
     const {currentUser, logOut} = useAuth()
     const [changeColor, setChangeColor] = useState(false)
     const changeBackground = () => {
@@ -24,6 +25,15 @@ const Navbar = () => {
             setError("FAILED TO LOG OUT")
         }
     }
+    useEffect(() => {
+        fetch("http://localhost:8000/isAdmin", {
+            method: "POST",
+            headers: {'Content-Type': "application/json"},
+            body: JSON.stringify({email : currentUser?.email})
+        })
+        .then(response => response.json())
+        .then(data => setIsAdmin(data))
+    }, [currentUser?.email])
     return (
         <nav className={changeColor ? "changeColor" : ""}>
             <div className="logo">
@@ -31,7 +41,7 @@ const Navbar = () => {
             </div>
             <ul>
                 <li><a href="#home" className="active" style={{color: changeColor && "#fff"}}>Home</a></li>
-                <li><Link to="/admin"  style={{color: changeColor && "#fff"}}>Admin</Link></li>
+                {isAdmin && <li><Link to="/admin"  style={{color: changeColor && "#fff"}}>Admin</Link></li>}
                 <li><Link to="/orders"  style={{color: changeColor && "#fff"}}>Orders</Link></li>
                 <li><a href="#services" style={{color: changeColor && "#fff"}}>Services</a></li>
                 <li><a href="#blogs" style={{color: changeColor && "#fff"}}>Blogs</a></li>
