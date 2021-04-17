@@ -1,3 +1,13 @@
+.review-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  width: 90%;
+  margin: 0px auto;
+  align-items: center;
+  justify-content: center;
+  min-height: 100%;
+}
 .review-card {
   background: linear-gradient(45deg, #111d5e, #1b1717);
   color: white;
@@ -13,4 +23,14 @@
   filter: invert(2);
   margin-right: 20px;
   margin-left: 10px;
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  .review-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .review-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

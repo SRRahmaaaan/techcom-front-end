@@ -26,7 +26,7 @@ const ServicePolicy = () => {
     return (
         <section className="sectionContainer">
             <h3 className="heading mb-5">WE BELIEVE <span style={{fontSize:"6rem", color:"black"}}>3</span> THINGS</h3>
-            <div className="row w-100">
+            <div className="policy-container">
                 {
                     policyData.map((data) => <PolicyCard key={data.name} data={data} />)
                 }

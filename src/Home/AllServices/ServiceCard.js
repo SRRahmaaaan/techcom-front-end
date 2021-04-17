@@ -6,7 +6,6 @@ import "./Services.css"
 const ServiceCard = ({ service }) => {
     const { content } = service
     return (
-        <div className="col-md-4 p-0">
             <div className="service-box">
                 <div className="imgbx common">
                     <img src={service.imageURL} alt=""/>
@@ -20,7 +19,6 @@ const ServiceCard = ({ service }) => {
                     </Button>
                 </div>
             </div>
-        </div>
     )
 }
 

@@ -4,7 +4,6 @@ import "./Review.css"
 
 const ReviewCard = ({review}) => {
     return (
-        <div className="col-md-4">
             <div className="review-card">
                 <div className="d-flex mb-2">
                     <img src={userPicture} alt="userPicture"/>
@@ -15,7 +14,6 @@ const ReviewCard = ({review}) => {
                 </div>
                 <p>{ review.comment}</p>
             </div>
-        </div>
     )
 }
 

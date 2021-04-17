@@ -1,11 +1,20 @@
 .sectionContainer {
   min-height: 100vh;
-  width: 95%;
-  margin: 0px auto;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.sectionContainer .policy-container {
+  width: 95%;
+  margin: 0px auto 100px auto;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 .box {
   background: linear-gradient(45deg, #111d5e, #1b1717);
@@ -14,7 +23,6 @@
   align-items: center;
   justify-content: center;
   height: 250px;
-  width: 400px;
   padding: 0px 3%;
   border-radius: 20px;
 }
@@ -23,4 +31,15 @@
 }
 .box .imgbx img {
   width: 200px;
+}
+@media (min-width: 320px) and (max-width: 992px) {
+  .sectionContainer .policy-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 280px) and (max-width: 374px) {
+  .sectionContainer h3 {
+    font-size: 2.2rem;
+  }
 }

@@ -11,7 +11,7 @@ const AllServices = () => {
     return (
         <section className="sectionContainer pb-5" id="services">
             <h4 className="mb-4 text-center heading">WHAT WE DO BEST</h4>
-            <div className="row mx-auto" style={{width:"85%"}}>
+            <div className="service-container">
                 {
                     services.map((service) => <ServiceCard key={service._id} service={service} />)
                 }
