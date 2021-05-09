@@ -1,10 +1,10 @@
 import React from 'react'
-import maintenance from  "../../images/maintenance.jpg"
-import hates from  "../../images/hates.jpg"
-import protect from  "../../images/protect.jpg"
-import basic from  "../../images/basic.jpg"
-import place from  "../../images/places.jpg"
-import clean from  "../../images/clean.jpg"
+import maintenance from  "../../images/maintenance-min.jpg"
+import hates from  "../../images/hates-min.jpg"
+import protect from  "../../images/protect-min.jpg"
+import basic from  "../../images/basic-min.jpg"
+import place from  "../../images/places-min.jpg"
+import clean from  "../../images/clean-min.jpg"
 import Blog from './Blog'
 
 
